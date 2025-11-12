@@ -8,7 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>Certificate Generator</h1>
+        <div class="logo-container">
+            <div class="university-name">Suranaree University of Technology</div>
+            <div class="university-name-th">มหาวิทยาลัยเทคโนโลยีสุรนารี</div>
+        </div>
+        <h1>Academic Global Conference</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 30px;">Certificate Generator</p>
         
         <!-- Single Certificate -->
         <div class="section">
@@ -47,8 +52,18 @@
                         <span id="fileName">Choose text file...</span>
                     </label>
                 </div>
+                <div class="format-selector">
+                    <label>
+                        <input type="radio" name="format" value="zip" checked>
+                        <span>Download as ZIP (separate PDFs)</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="format" value="pdf">
+                        <span>Download as single PDF (multiple pages)</span>
+                    </label>
+                </div>
                 <button id="bulkGenerateBtn" onclick="generateBulkCertificates()" disabled>
-                    Generate & Download ZIP
+                    Generate & Download
                 </button>
             </div>
             <div id="bulkPreview" class="preview-container"></div>
